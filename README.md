@@ -76,34 +76,38 @@ These features are on our roadmap and will be available in future updates!
 
 ## 📦 Distribution/Get the App
 
-You can download the latest version from the [**Releases Page**](https://github.com/YourGitHubUsername/KhEC-Student/releases).
+You can download the latest beta build version on [**Releases Page**](https://github.com/YourGitHubUsername/KhEC-Student/releases).
 
 Just grab the `.apk` file from the latest release and install it on your Android device.
 
 ( Apple IOS Build (.ipa) is not avialable, since i dont have Xcode and MAC BOOK 😪. You can donate me if you want 😁)
 
-### License
+Avialable Soon on:
+[![Play Store](https://img.shields.io/badge/Google_Play-000?style=flat-square&logo=google-play&logoColor=white&labelColor=transparent)](https://github.com)
+[![F-Droid](https://img.shields.io/badge/F_Droid-000?style=flat-square&logo=f-droid&logoColor=white&labelColor=transparent)](https://github.com)
+[![App Store](https://img.shields.io/badge/App_Store-000?style=flat-square&logo=app-store&logoColor=white&labelColor=transparent)](https://github.com)
 
-Distributed under the MIT License. See `LICENSE.txt` for more information. This means you are free to use, modify, and distribute the code, provided you include the original copyright and license notice.
 
-<a href="LICENSE.txt">
-  <img alt="License" src="https://img.shields.io/github/license/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
-</a>
+## 🤝 Contributing & Donation
 
-## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
+If you have a suggestion that would make this better. You can simply open an issue with the tag "enhancement".
+<!-- Fork the repo and create a pull request is currently not avialable
+Any contributions you make are **greatly appreciated**.
 1.  Fork the Project
 2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
-
+-->
 Don't forget to give the project a star! Thanks again!
-
+<br>
+Donate:
+ <br>
+ ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white): **0x890F4AA6080ED5f32404AbD3131CC1f79E25586e**
+<br>
+ **XMR: **
+ 
 ## 🙏 Acknowledgements
 
 A special thanks to these resources and individuals for making this project possible:
@@ -113,6 +117,13 @@ A special thanks to these resources and individuals for making this project poss
 *   [Khwopa College of Engineering] - For providing the original system.
 *   [To my mentor & professors] - For their guidance and support.
 
+### License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<a href="LICENSE.txt">
+  <img alt="License" src="https://img.shields.io/github/license/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+</a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Flutter-shield]: https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white

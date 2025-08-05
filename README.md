@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="[LINK_TO_YOUR_APP_LOGO_OR_BANNER_IMAGE]" alt="Project Banner" width="600"/>
+  <img width="400" height="400" alt="Logo created using AI" src="https://github.com/user-attachments/assets/f837d3a5-ac2a-4c57-858e-642797528352" />
 </div>
 
 # KhEC Student App 🚀

@@ -1,65 +1,159 @@
 <div align="center">
-  <img width="400" height="400" alt="Logo" src="https://github.com/user-attachments/assets/a9ad1791-9a39-45b8-b21a-29bcaede0bcf" />
+  <img width="200" height="200" alt="myKhwopa Logo" src="https://github.com/user-attachments/assets/a9ad1791-9a39-45b8-b21a-29bcaede0bcf" />
+  
+  # myKhwopa
+  
+  **A faster, cleaner mobile app for Khwopa students.**  
+  Built with Flutter because the official app wasn't cutting it.
+  
+  <p align="center">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+    <img alt="License" src="https://img.shields.io/github/license/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+    <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white">
+    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
+  </p>
+  
+  [Download APK](https://github.com/flipper0x0/KhCE_Student_App/releases) • [Report Bug](https://github.com/flipper0x0/KhCE_Student_App/issues) • [Request Feature](https://github.com/flipper0x0/KhCE_Student_App/issues)
 </div>
 
-# myKhwopa
+---
 
-A faster, cleaner mobile app for Khwopa students. Built with Flutter because the official app wasn't cutting it.
+## 🚀 Why This Exists
 
-<p align="center">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
-  <img alt="GitHub stars" src="https://img.shields.io/github/stars/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
-  <img alt="License" src="https://img.shields.io/github/license/flipper0x0/KhCE_Student_App?style=flat-square&color=5865F2">
-  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white">
-</p>
+The official Khwopa app was slow, outdated, and frustrating to use. This is the fix—Material 3 design, local caching, and an interface that actually works.
 
-### Previews:
-<img width="1552" height="3360" alt="canvas-4" src="https://github.com/user-attachments/assets/cbd11bd7-f0a7-4f8f-a5a9-749cd2d92792" />
-<img width="1552" height="3360" alt="canvas-1" src="https://github.com/user-attachments/assets/50844001-66ed-4f8b-a5e3-0fb15b942534" />
+## ✨ Features
 
-## What's This About
+**Core Functionality:**
+- 📊 Real-time attendance tracking with visual analytics
+- 💰 Invoice viewing and payment history (read-only)
+- 📚 Complete syllabus access with offline support
+- 🌙 Dark mode that doesn't burn your eyes
+- ⚡ Lightning-fast local caching for offline use
+- 🔒 Rate limiting to keep college servers happy
 
-The official app was slow and outdated. This is the fix—Material 3 design, local caching, and an interface that doesn't make you want to throw your phone.
+**User Experience:**
+- Material 3 design language
+- Smooth animations and transitions
+- One-handed navigation
+- No unnecessary permissions
+- Battery-efficient background sync
 
-## Features
+## 📱 Previews
 
-- Attendance tracking
-- Invoice viewing (read-only)
-- Syllabus access
-- Dark mode
-- Local caching for offline use
-- Rate limiting to keep servers happy
+<div align="center">
+  <img width="250" alt="Home Screen" src="https://github.com/user-attachments/assets/a0956c4f-6995-4e42-aaa2-f80957e8283a" />
+  <img width="250" alt="Attendance View" src="https://github.com/user-attachments/assets/d5318547-ca17-4924-8de5-5b0d5edb562c" />
+  <img width="250" alt="Invoice Screen" src="https://github.com/user-attachments/assets/e96b3549-ba47-4a87-87bc-91cc21ef26bb" />
+</div>
 
-## Technical Notes
+<details>
+<summary>📸 View More Screenshots</summary>
+<br>
+<div align="center">
+  <img width="250" alt="Syllabus" src="https://github.com/user-attachments/assets/32e4a2a2-7d95-4b97-8ec5-2278f9b8e804" />
+  <img width="250" alt="Dark Mode" src="https://github.com/user-attachments/assets/db9aeebb-1b67-4afe-a47e-1c432a6c2874" />
+  <img width="250" alt="Settings" src="https://github.com/user-attachments/assets/ce4b1e9b-32c1-41ac-ab55-c1cca53b38b3" />
+</div>
+</details>
 
-Built with Hive for local storage. Implements cooldown timers on refresh to prevent server overload. Data pulls from existing college APIs—we're just making it look better.
+## 📥 Installation
 
-## Limitations
+### Option 1: Download APK (Recommended)
+1. Go to [Releases](https://github.com/flipper0x0/KhCE_Student_App/releases)
+2. Download the latest `.apk` file
+3. Enable "Install from Unknown Sources" in Android settings
+4. Install and open the app
+5. Login with your Khwopa credentials
 
-- Android only (no MacBook for iOS builds)
-- No push notifications
-- Can't process payments, only view invoices
-- Data accuracy depends on official backend
 
-## Download
+## 🛠️ Technical Stack
 
-Get the latest APK from [Releases](https://github.com/flipper0x0/KhCE_Student_App/releases).
+**Framework:** Flutter 3.x  
+**State Management:** Provider/Riverpod  
+**Local Storage:** Hive (lightweight, fast NoSQL)  
+**HTTP Client:** Dio with retry interceptors  
+**Architecture:** Clean Architecture with Repository pattern
 
-## Contributing
+**Key Implementations:**
+- Cooldown timers on API refresh (prevents server spam)
+- Optimistic UI updates for better UX
+- Automatic retry logic for failed requests
+- Smart caching with TTL (Time To Live)
 
-Issues and PRs welcome. Keep it clean.
+## ⚠️ Known Limitations
+
+- **Android Only** - No MacBook = no iOS builds (yet)
+- **No Push Notifications** -  Available soon after properly setting `firebase`
+- **Read-Only Invoices** - Can't process payments, only view
+- **Data Accuracy** - Depends on official backend uptime
+- **No Biometric Auth** - Coming in future updates
+
+## 🗺️ Roadmap
+
+- [ ] iOS version (need MacBook sponsor 👀)
+- [ ] Push notifications for attendance alerts
+- [ ] Offline-first architecture improvements
+- [ ] Result analysis and GPA calculator
+- [ ] Timetable integration
+- [ ] Study material repository
+- [ ] Peer-to-peer note sharing
+
+## 🤝 Contributing
+
+Found a bug? Want to add a feature? Contributions are welcome!
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/CoolFeature`)
+3. Commit changes (`git commit -m 'Add CoolFeature'`)
+4. Push to branch (`git push origin feature/CoolFeature`)
+5. Open a Pull Request
+
+**Guidelines:**
+- Follow existing code style
+- Write meaningful commit messages
+- Test thoroughly before submitting
+- Update documentation if needed
+
+## 📞 Contact & Support
+
+- **Issues:** [GitHub Issues](https://github.com/flipper0x0/myKhwopa/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/flipper0x0/myKhwopa/discussions)
+- **Email:** [flipper0x0@proton.me]
 
 ---
-## Legal Disclaimer
 
-**Unofficial Third-Party App:** This is not affiliated with, endorsed by, or officially connected to Khwopa College of Engineering.
+## ⚖️ Legal Disclaimer
 
-**Intellectual Property:** All logos, branding, trademarks, and backend data belong to Khwopa College of Engineering. This app only provides an alternative interface to publicly accessible data.
+**Unofficial Third-Party Application**  
+This app is NOT affiliated with, endorsed by, or officially connected to Khwopa College of Engineering.
 
-**Liability & Accuracy:** This app is provided "as is" without warranties. Data shown may be inaccurate, outdated, or incomplete. Do not rely solely on this app for critical decisions like attendance verification, fee payment deadlines, or exam schedules. Always verify important information through official college channels.
+**Intellectual Property**  
+All logos, branding, trademarks, and backend data belong to Khwopa College of Engineering. This app provides an alternative interface to publicly accessible data.
 
-**Use at Your Own Risk:** The developers assume no responsibility for any consequences arising from the use or misuse of this application, including but not limited to data inaccuracies, missed deadlines, or account issues.
+**Liability & Data Accuracy**  
+Provided "as is" without warranties. Data may be inaccurate, outdated, or incomplete. Always verify critical information (attendance, fees, exam schedules) through official college channels.
 
-**Educational Purpose:** This project exists for educational purposes and to improve student experience. If Khwopa College requests removal, this repository will be taken down immediately.
+**Use at Your Own Risk**  
+Developers assume no responsibility for consequences arising from use or misuse, including data inaccuracies, missed deadlines, or account issues.
+
+**Educational Purpose**  
+Created to improve student experience. If Khwopa College requests removal, this repository will be taken down immediately.
+
 ---
-Built with Flutter • Licensed under MIT • Not officially affiliated with Khwopa College of Engineering
+
+<div align="center">
+  
+**Built with ❤️ using Flutter**
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Made in Nepal](https://img.shields.io/badge/Made%20in-Nepal-red?style=flat-square)](https://en.wikipedia.org/wiki/Nepal)
+
+**Not officially affiliated with Khwopa College of Engineering**
+
+[⬆ Back to Top](#mykhwopa)
+
+</div>
+

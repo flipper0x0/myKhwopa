@@ -1,3 +1,7 @@
+#remove api and code file
+src/
+
+
 # Gradle files
 .gradle/
 build/

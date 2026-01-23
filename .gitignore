@@ -3,7 +3,7 @@ src/
 lib/screens
 lib/services
 lib/auth
-
+lib/main.dart
 
 # Gradle files
 .gradle/

@@ -1,7 +1,6 @@
 #remove api and code file
 src/
 lib/screens
-lib/services
 lib/auth
 lib/main.dart
 

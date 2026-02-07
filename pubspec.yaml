@@ -43,20 +43,15 @@ flutter:
   fonts:
     - family: Nep
       fonts:
-        - asset: fonts/nep.ttf   # If your font is in root/fonts/
+        - asset: fonts/nep.ttf   
 
 flutter_native_splash:
-  color: "#121212"  # MATCH YOUR MaterialApp surfaceColor or a suitable solid color
-  image: lib/assets/bot.png # PATH TO THE SAME LOGO as in SplashScreen.dart
+  color: "#121212"  # MaterialApp ko surfaceColor
+  image: lib/assets/bot.png 
 
-  # If you want manual removal to work reliably, sometimes these are needed:
   android_gravity: center
   ios_content_mode: scaleAspectFit # or center
 
-  # Optional: Disable automatic removal if you rely purely on FlutterNativeSplash.remove()
-  # You usually don't need to set these if you call .remove() correctly.
-  # remove_android_splash_activity: false # Default is true
-  # fullscreen: true # Ensures it covers status/navigation bars
 
   android_12:
     color: "#121212"

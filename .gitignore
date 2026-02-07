@@ -1,8 +1,13 @@
+*.jar
+*.gradle
+*.git
+myKhwopa.git.bfg-report
 #remove api and code file
 src/
 lib/screens
 lib/auth
 lib/main.dart
+
 
 # Gradle files
 .gradle/

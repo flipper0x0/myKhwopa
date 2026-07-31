@@ -1,0 +1,111 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+     viewBox="0 0 400 800" width="400" height="800" 
+     style="background-color: #000000;">
+<defs>
+    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#00d4ff">
+            <animate attributeName="stop-color" values="#00d4ff;#7928ca;#ff0080;#00d4ff" dur="5s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="50%" style="stop-color:#7928ca">
+            <animate attributeName="stop-color" values="#7928ca;#ff0080;#00d4ff;#7928ca" dur="5s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="100%" style="stop-color:#ff0080">
+            <animate attributeName="stop-color" values="#ff0080;#00d4ff;#7928ca;#ff0080" dur="5s" repeatCount="indefinite"/>
+        </stop>
+    </linearGradient>
+    
+    <style>
+        <![CDATA[
+        /* WAVE ANIMATION */
+        .wave {
+            animation: waveFlow 3s ease-in-out infinite;
+        }
+        @keyframes waveFlow {
+            0%, 100% { d: path("M0,200 Q100,180 200,200 T400,200"); }
+            50% { d: path("M0,200 Q100,220 200,200 T400,200"); }
+        }
+        
+        /* ICON FLOAT */
+        .float {
+            animation: floatUp 3s ease-in-out infinite;
+        }
+        @keyframes floatUp {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* TEXT SCALE */
+        .scale-text {
+            animation: scaleIn 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        ]]>
+    </style>
+</defs>
+
+<path class="wave" fill="none" stroke="url(#wave-grad)" stroke-width="3" opacity="0.3"/>
+<path class="wave" fill="none" stroke="url(#wave-grad)" stroke-width="3" opacity="0.3" style="animation-delay: 0.5s;">
+    <animate attributeName="d" values="M0,220 Q100,200 200,220 T400,220;M0,220 Q100,240 200,220 T400,220;M0,220 Q100,200 200,220 T400,220" dur="3s" repeatCount="indefinite"/>
+</path>
+<path class="wave" fill="none" stroke="url(#wave-grad)" stroke-width="3" opacity="0.3" style="animation-delay: 1s;">
+    <animate attributeName="d" values="M0,240 Q100,220 200,240 T400,240;M0,240 Q100,260 200,240 T400,240;M0,240 Q100,220 200,240 T400,240" dur="3s" repeatCount="indefinite"/>
+</path>
+
+<g class="float" style="animation-delay: 0s;">
+    <circle cx="80" cy="300" r="40" fill="#1a1a1a" stroke="#ffaa00" stroke-width="3"/>
+    <g transform="translate(80, 300) scale(1.5)">
+        <path d="M-5,-10 L2,0 L8,0 L-2,12 L-5,2 L-10,2 Z" fill="#ffaa00"/>
+    </g>
+    <text x="80" y="360" text-anchor="middle" font-family="Arial Black" font-size="12" fill="#ffaa00" font-weight="bold">ELECTRICAL</text>
+</g>
+
+<g class="float" style="animation-delay: 0.3s;">
+    <circle cx="200" cy="300" r="40" fill="#1a1a1a" stroke="#ff6600" stroke-width="3"/>
+    <g transform="translate(200, 300) scale(1.2)">
+        <path d="M-18,8 Q0,-15 18,8 H-18 M-10,8 V-5 M0,8 V-8 M10,8 V-5" stroke="#ff6600" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <line x1="-22" y1="8" x2="22" y2="8" stroke="#ff6600" stroke-width="2.5"/>
+    </g>
+    <text x="200" y="360" text-anchor="middle" font-family="Arial Black" font-size="12" fill="#ff6600" font-weight="bold">CIVIL</text>
+</g>
+
+<g class="float" style="animation-delay: 0.6s;">
+    <circle cx="320" cy="300" r="40" fill="#1a1a1a" stroke="#00ff88" stroke-width="3"/>
+    <g transform="translate(320, 300) scale(1.2)">
+        <rect x="-14" y="-12" width="28" height="18" rx="1.5" fill="none" stroke="#00ff88" stroke-width="2.5"/>
+        <line x1="-9" y1="-7" x2="0" y2="-7" stroke="#00ff88" stroke-width="1.5" opacity="0.7"/>
+        <line x1="-9" y1="-3" x2="5" y2="-3" stroke="#00ff88" stroke-width="1.5" opacity="0.7"/>
+        <line x1="-9" y1="1" x2="-2" y2="1" stroke="#00ff88" stroke-width="1.5" opacity="0.7"/>
+        <path d="M-16,9 L16,9 L14,13 L-14,13 Z" fill="#00ff88"/>
+    </g>
+    <text x="320" y="360" text-anchor="middle" font-family="Arial Black" font-size="12" fill="#00ff88" font-weight="bold">COMPUTER</text>
+</g>
+
+<line x1="120" y1="300" x2="280" y2="300" stroke="url(#wave-grad)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-10" dur="1s" repeatCount="indefinite"/>
+</line>
+
+<g class="scale-text">
+    <text x="200" y="480" text-anchor="middle" font-family="Arial Black" font-size="56" fill="url(#wave-grad)" font-weight="900">KHWOPA</text>
+</g>
+
+<g class="scale-text" style="animation-delay: 0.2s; opacity: 0;">
+    <text x="200" y="530" text-anchor="middle" font-family="Arial Black" font-size="24" fill="#ffffff" font-weight="900" letter-spacing="12">COLLEGE OF</text>
+</g>
+
+<g class="scale-text" style="animation-delay: 0.4s; opacity: 0;">
+    <text x="200" y="590" text-anchor="middle" font-family="Arial Black" font-size="50" fill="url(#wave-grad)" font-weight="900">ENGINEERING</text>
+</g>
+
+<rect x="50" y="650" width="300" height="4" rx="2" fill="#222222"/>
+<rect x="50" y="650" width="0" height="4" rx="2" fill="url(#wave-grad)">
+    <animate attributeName="width" from="0" to="300" dur="3s" fill="freeze"/>
+</rect>
+
+<g class="scale-text" style="animation-delay: 0.6s; opacity: 0;">
+    <text x="200" y="700" text-anchor="middle" font-family="Arial" font-size="14" fill="#666666">EST. 1998 • BHAKTAPUR</text>
+</g>
+
+</svg>
